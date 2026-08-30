@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영문법 오답 노트 & 핵심 시제 정리</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-bg: #eff6ff;
+            --text: #1e293b;
+            --border: #e2e8f0;
+            --card-bg: #ffffff;
+            --correct: #16a34a;
+            --wrong: #dc2626;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 30px;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            margin-top: 0;
+            color: #0f172a;
+            border-bottom: 2px solid var(--primary-bg);
+            padding-bottom: 8px;
+        }
+
+        .bad-vs-good {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 16px 0;
+        }
+
+        @media (max-width: 600px) {
+            .bad-vs-good {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .box {
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        .box.wrong {
+            background-color: #fef2f2;
+            border-left: 4px solid var(--wrong);
+        }
+
+        .box.correct {
+            background-color: #f0fdf4;
+            border-left: 4px solid var(--correct);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+
+        th, td {
+            border: 1px solid var(--border);
+            padding: 10px 14px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: var(--primary-bg);
+            color: var(--primary);
+        }
+
+        ul {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>📘 영문법 핵심 오답 노트</h1>
+        <p>Present Perfect vs. Simple Past 및 주요 부사/표현 완벽 정리</p>
+    </header>
+
+    <!-- SECTION 1 -->
+    <div class="card">
+        <h2>1. Present Perfect vs. Simple Past 판단 기준</h2>
+        <p>현재완료는 <strong>"과거 사건으로 인한 현재의 영향/상태"</strong>가 핵심이며, 단순과거는 <strong>"과거로 끝난 독립된 사건"</strong>입니다.</p>
+        
+        <div class="bad-vs-good">
+            <div class="box wrong">
+                <strong>❌ 비문 / 어색한 표현</strong><br>
+                My mother <u>has grown up</u> in Italy.<br>
+                <small>(엄마는 이미 성인이므로 현재도 자라는 중일 수 없음)</small>
+            </div>
+            <div class="box correct">
+                <strong>⭕ 올바른 표현</strong><br>
+                My mother <u>grew up</u> in Italy.<br>
+                <small>(어린 시절의 성장 과정은 이미 완료된 과거의 일)</small>
+            </div>
+        </div>
+
+        <div class="bad-vs-good">
+            <div class="box wrong">
+                <strong>❌ 비문 / 어색한 표현</strong><br>
+                I <u>have applied</u> for a job, I wasn't successful.<br>
+                <small>(불합격 결과가 나와 절차가 끝났으므로 현완 불가 & 콤마 오류)</small>
+            </div>
+            <div class="box correct">
+                <strong>⭕ 올바른 표현</strong><br>
+                I <u>applied</u> for a job, <strong>but</strong> I wasn't successful.<br>
+                <small>(단순과거 사용 및 접속사 but 추가)</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="card">
+        <h2>2. 부사 Just / Already / Yet 위치 및 시제 규칙</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>단어</th>
+                    <th>품사</th>
+                    <th>문장 내 위치</th>
+                    <th>특징</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Just</strong> (방금)</td>
+                    <td>부사</td>
+                    <td>조동사/be동사 뒤, 일반동사 앞</td>
+                    <td>영국식/시험: Present Perfect<br>미국식 구어: Simple Past도 자주 사용</td>
+                </tr>
+                <tr>
+                    <td><strong>Already</strong> (이미)</td>
+                    <td>부사</td>
+                    <td>조동사/be동사 뒤, 일반동사 앞 (강조 시 문말)</td>
+                    <td>영국식/시험: Present Perfect<br>미국식 구어: Simple Past도 자주 사용</td>
+                </tr>
+                <tr>
+                    <td><strong>Yet</strong> (아직/벌써)</td>
+                    <td>부사</td>
+                    <td><strong>문장 맨 끝</strong></td>
+                    <td>부정문, 의문문에 주로 사용</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="card">
+        <h2>3. 헷갈리기 쉬운 구문 & 발음 교정</h2>
+        <ul>
+            <li><strong>meant to + 동사원형:</strong> "~하려고 했었다 (과거의 의도/계획)"
+                <ul>
+                    <li><i>I meant to call you last night, but I forgot.</i></li>
+                </ul>
+            </li>
+            <li><strong>mean vs. meant 발음 차이:</strong>
+                <ul>
+                    <li><span class="highlight">mean</span> (현재형): /miːn/ [민-] - 긴 '이' 발음</li>
+                    <li><span class="highlight">meant</span> (과거형): /ment/ [멘트] - 짧은 '에' 발음</li>
+                </ul>
+            </li>
+            <li><strong>The situation is different now vs. The situation now is different:</strong>
+                <ul>
+                    <li>둘 다 100% 문법적으로 올바른 문장.</li>
+                    <li><i>now</i>가 문말 부사로 쓰이거나, <i>the situation now</i>(지금의 상황)라는 주어 덩어리로 쓰인 차이.</li>
+                </ul>
+            </li>
+            <li><strong>I wasn't successful vs. It wasn't successful:</strong>
+                <ul>
+                    <li><b>I wasn't successful:</b> 사람(나)이 지원/시험에서 불합격함.</li>
+                    <li><b>It wasn't successful:</b> 나의 지원/시도(It) 자체가 실패로 끝남. (둘 다 사용 가능)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="card">
+        <h2>4. 실전 퀴즈 핵심 정리 (단순과거 vs 현재완료)</h2>
+        <ul>
+            <li><b>Mike lost his key yesterday. (O)</b> $\rightarrow$ 어제 잃어버렸던 사실 (현재 찾아서 주머니에 있음).</li>
+            <li><b>I've forgotten my wallet at home! (O)</b> $\rightarrow$ 집에 두고 와서 '현재 지갑이 없는 상태' 유지.</li>
+            <li><b>Stephen Hawking wrote many books. (O)</b> $\rightarrow$ 작고한 인물의 역사적 업적.</li>
+            <li><b>It has stopped raining. (O)</b> $\rightarrow$ 지금 비가 그쳐 있는 '현재 상태'에 초점. (<i>a few minutes ago</i> 같은 과거 시점이 붙으면 단순과거 <i>stopped</i> 사용)</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Grammar Review Sheet • Created for English Learning</p>
+    </footer>
+</div>
+
+</body>
+</html>
