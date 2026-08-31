@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현재완료 vs 단순과거 완벽 학습 보고서 & 오답노트</title>
+    <style>
+        :root {
+            --primary-color: #2b569a;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #e9ecef;
+            --pass-bg: #e6f4ea;
+            --pass-text: #137333;
+            --fail-bg: #fce8e6;
+            --fail-text: #c5221f;
+            --warn-bg: #fef7e0;
+            --warn-text: #b06000;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 12px;
+            font-size: 1.8rem;
+        }
+
+        h2 {
+            color: #1a252c;
+            margin-top: 35px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+        }
+
+        .concept-box {
+            background-color: #f0f4f8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        th {
+            background-color: #f1f3f5;
+            color: #495057;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fdfdfd;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .badge-pass { background-color: var(--pass-bg); color: var(--pass-text); }
+        .badge-fail { background-color: var(--fail-bg); color: var(--fail-text); }
+        .badge-warn { background-color: var(--warn-bg); color: var(--warn-text); }
+
+        .analysis-text {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .highlight-box {
+            background-color: #fff9db;
+            border: 1px solid #ffe066;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, Monaco, monospace;
+            color: #d63384;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 15px; }
+            table { font-size: 0.85rem; display: block; overflow-x: auto; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>?? 현재완료 vs 단순과거 완벽 학습 보고서 & 오답노트</h1>
+
+    <div class="concept-box">
+        <h2>?? 1. 시제 구분의 핵심 원리 (카메라 앵글 개념)</h2>
+        <p>규칙을 무작정 외우면 실전에서 입이 떨어지지 않습니다. 원어민 화자의 <strong>시각적 이미지(카메라 렌즈의 위치)</strong>로 이해하면 직관적으로 구분할 수 있습니다.</p>
+        <ul>
+            <li><strong>단순 과거 (Simple Past: <code>V-ed</code>)</strong>: 카메라가 <strong>과거의 한 지점</strong>을 비춥니다. 과거에 일어났던 일로 끝났으며, <strong>현재 상태와는 완전히 단절</strong>되어 있습니다.</li>
+            <li><strong>현재 완료 (Present Perfect: <code>have/has + p.p.</code>)</strong>: 카메라가 <strong>현재(지금)</strong>를 비춥니다. 과거 사건의 <strong>손자국, 영향, 결과, 경험 데이터가 '지금 이 순간' 내 몸/뇌/손에 남아있는 상태</strong>입니다.</li>
+        </ul>
+    </div>
+
+    <h2>?? 2. 회차별 영작 문제 및 상세 오답 분석</h2>
+
+    <h3>?? [1회차] 기초 시제 구분 10선</h3>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 5%;">No</th>
+                <th style="width: 25%;">한국어 문제</th>
+                <th style="width: 22%;">작성하신 문장</th>
+                <th style="width: 22%;">모델 정답</th>
+                <th style="width: 8%;">판정</th>
+                <th style="width: 18%;">오류 분석 & 핵심</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>나는 어제 그 영화를 봤어.</td>
+                <td><code>I watched that movie yesterday.</code></td>
+                <td><code>I watched that movie yesterday.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text"><code>yesterday</code>는 명확한 과거 시점이므로 단순과거 적용.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>너는 파리에 가본 적이 있니?</td>
+                <td><code>Have you ever been to Paris?</code></td>
+                <td><code>Have you ever been to Paris?</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">인생 전반의 누적된 '경험' 질문.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>그녀는 2020년부터 이 회사에서 일해오고 있다.</td>
+                <td><code>She's worked in this company since 2020.</code></td>
+                <td><code>She's worked at this company since 2020.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text"><code>since + 시점</code>은 현재완료와 결합.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>그는 어렸을 때 런던에서 5년 동안 살았다.</td>
+                <td><code>He lived in London for 5 years when he was young.</code></td>
+                <td><code>He lived in London for 5 years when he was young.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">과거 시점(어릴 때) 종료된 일은 단순과거.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>내가 지갑을 잃어버려서 지금 지갑이 없어.</td>
+                <td><code>I've lost my wallet.</code></td>
+                <td><code>I've lost my wallet.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">과거 분실의 결과가 <strong>현재도 지속됨</strong>을 표현.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>너는 그 컴퓨터를 언제 샀니?</td>
+                <td><code>When did you get that computer?</code></td>
+                <td><code>When did you get that computer?</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text"><code>When</code> 의문문은 단순과거 사용.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>나는 방금 숙제를 끝마쳤다.</td>
+                <td><code>I've just finished my homework.</code></td>
+                <td><code>I've just finished my homework.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text"><code>have + just + p.p.</code> 구조 완벽적용.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>우리는 10분 전에 회의를 끝냈다.</td>
+                <td><code>We finished the meeting 10 min ago.</code></td>
+                <td><code>We finished the meeting 10 minutes ago.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text"><code>~ ago</code>는 과거 점 찍기이므로 단순과거.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>너는 그를 얼마나 오랫동안 알고 지냈니?</td>
+                <td><code>How long do you ???</code> <em>(미완성)</em></td>
+                <td><code>How long have you known him?</code></td>
+                <td><span class="badge badge-fail">? 오류</span></td>
+                <td class="analysis-text"><strong>[원인]</strong> 단순현재 <code>do</code>는 기간 지속 불가.<br><strong>[포인트]</strong> <code>How long + have p.p.?</code> 패턴 사용.</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>나는 오늘 아침 커피를 세 잔 마셨다. (현재 오전)</td>
+                <td><code>I've had three cups of coffee this morning.</code></td>
+                <td><code>I've had three cups of coffee this morning.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">진행 중인 기간(오전)에는 현재완료.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>?? [2회차] 고난도 시제 구분 퀴즈 10선</h3>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 5%;">No</th>
+                <th style="width: 25%;">한국어 문제</th>
+                <th style="width: 22%;">작성하신 문장</th>
+                <th style="width: 22%;">모델 정답</th>
+                <th style="width: 8%;">판정</th>
+                <th style="width: 18%;">오류 분석 & 핵심</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>셰익스피어는 수많은 희곡과 시를 썼다.</td>
+                <td><code>Shakespire wrote a lot of pieces of poetry.</code></td>
+                <td><code>Shakespeare wrote many plays and poems.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">사망한 역사적 인물 업적 ?? 단순과거 <code>wrote</code>.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>그는 지금 자리에 없어. 점심 먹으러 나갔거든.</td>
+                <td><code>He is not here because he's gone out.</code></td>
+                <td><code>He isn't here. He has gone out for lunch.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text"><code>have gone out</code> ?? 가버려서 지금 없음.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>너 최근에 탐 본 적 있니?</td>
+                <td><code>Have you seen Tom recently?</code></td>
+                <td><code>Have you seen Tom recently?</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">최근까지의 행적 묻기 ?? 현재완료.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>지난달엔 비가 많이 왔지만, 이번 달엔 안 왔다.</td>
+                <td><code>It rained last month, but it hasn't rained a lot this month.</code></td>
+                <td><code>It rained last month, but it hasn't rained much this month.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">지나간 달(과거) vs 이번 달(진행 중 ?? 완료).</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>이런 종류의 버그는 이번에 처음 봐요.</td>
+                <td><code>It's the first time I've seen these kinds of bugs.</code></td>
+                <td><code>This is the first time I have seen this kind of bug.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text"><code>It's the first time + have p.p.</code> 패턴.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>오늘 하루 종일 피곤했어. (밤 11시 침대)</td>
+                <td><code>I was tired today.</code></td>
+                <td><code>I was tired all day today.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">하루 일과 종료 시점 ?? 오늘을 과거 처리.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>그는 방금 막 나갔어. (조건: just now)</td>
+                <td><code>He's just gone out.</code></td>
+                <td><code>He left just now.</code></td>
+                <td><span class="badge badge-warn">?? 조건 미흡</span></td>
+                <td class="analysis-text"><strong>[원인]</strong> <code>just now</code> 조건 놓침.<br><strong>[포인트]</strong> <code>just now</code>는 과거 시점 ?? 단순과거 사용.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>우리가 지난주 졸업한 이래로 연락하지 않았다.</td>
+                <td><code>We haven't contacted each other since we graduated.</code></td>
+                <td><code>Since we graduated last week, we haven't contacted each other.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text"><code>Since절</code>(과거) + 주절(현재완료) 시제일치.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>나 다리를 다쳐서 지금 축구를 못 해.</td>
+                <td><code>I cannot play football because I injured my legs.</code></td>
+                <td><code>I cannot play football because I have injured my leg.</code></td>
+                <td><span class="badge badge-warn">?? 뉘앙스 보완</span></td>
+                <td class="analysis-text"><strong>[원인]</strong> 현재 축구 못 뛰는 원인 명시.<br><strong>[포인트]</strong> 다친 상태의 현재 지속 ?? <code>have injured</code>.</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>전에도 이 문제를 해결해 본 적이 있어.</td>
+                <td><code>I solved this problem before.</code></td>
+                <td><code>I have solved this problem before.</code></td>
+                <td><span class="badge badge-warn">?? 뉘앙스 보완</span></td>
+                <td class="analysis-text"><strong>[원인]</strong> <code>before</code>는 경험 데이터.<br><strong>[포인트]</strong> 인생의 경험 표현 ?? <code>have p.p.</code> 결합.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>?? [3회차] 실전 영작 퀴즈 (No Hints) 10선</h3>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 5%;">No</th>
+                <th style="width: 25%;">한국어 문제</th>
+                <th style="width: 22%;">작성하신 문장</th>
+                <th style="width: 22%;">모델 정답</th>
+                <th style="width: 8%;">판정</th>
+                <th style="width: 18%;">오류 분석 & 핵심</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>스티브 잡스는 혁신적 제품들을 많이 만들었다.</td>
+                <td><code>Steve Jobs created many innovative products...</code></td>
+                <td><code>Steve Jobs created many innovative products...</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">고인의 업적 ?? 단순과거 <code>created</code>.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>그 사람 방금 전에 나갔어.</td>
+                <td><code>He's just gone out.</code> <em>(질문)</em></td>
+                <td><code>He's just gone out.</code> / <code>He left just now.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">초점에 따른 시제 구분 (아래 3장 참조).</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>나 열쇠를 잃어버려서 지금 집에 못 들어간다.</td>
+                <td><code>I cannot get into the house because I've lost my key.</code></td>
+                <td><code>I cannot get into the house because I have lost my key.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">현재 집에 못 들어가는 직접 원인 ?? 현재완료.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>너 이 영화 전에 본 적 있니?</td>
+                <td><code>Have you ever watched this movie?</code></td>
+                <td><code>Have you seen this movie before?</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">경험 질문 ?? 현재완료 의문문 (<code>see</code> 추천).</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>우리는 2021년에 그 집을 샀다.</td>
+                <td><code>We bought that house in 2021.</code></td>
+                <td><code>We bought that house in 2021.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">연도 표기(<code>in 2021</code>) ?? 단순과거.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>그는 방금 막 점심 식사를 마쳤다.</td>
+                <td><code>He's just had lunch.</code></td>
+                <td><code>He has just finished lunch.</code> / <code>He's just had lunch.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">찰나의 완료 ?? <code>has just had</code>.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>그녀는 3년 동안 이 팀을 이끌어오고 있다.</td>
+                <td><code>She's led this project team for 3 years.</code></td>
+                <td><code>She has led this project team for the last 3 years.</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">현재까지 지속 기간 ?? <code>has led</code>.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>너 어젯밤에 몇 시에 잤니?</td>
+                <td><code>When did you go to bed yesterday?</code></td>
+                <td><code>What time did you go to bed last night?</code></td>
+                <td><span class="badge badge-pass">? Pass</span></td>
+                <td class="analysis-text">과거 시점 질문 ?? 단순과거 <code>did you go</code>.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>나는 예전에 그 회사에서 5년 일했었다. (지금 그만둠)</td>
+                <td><code>I've still worked at that company for 5 years.</code></td>
+                <td><code>I worked at that company for 5 years.</code></td>
+                <td><span class="badge badge-fail">? 오류</span></td>
+                <td class="analysis-text"><strong>[원인]</strong> <code>I've worked</code>는 <strong>지금도 다님</strong>.<br><strong>[포인트]</strong> 이미 퇴사했으므로 단순과거 <code>worked</code>.</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>너 이번 주에 커피 몇 잔 마셨어? (이번주 진행중)</td>
+                <td><code>How many cups of coffee did you have last week?</code></td>
+                <td><code>How many cups of coffee have you had this week?</code></td>
+                <td><span class="badge badge-warn">?? 조건 미흡</span></td>
+                <td class="analysis-text"><strong>[원인]</strong> <code>last week</code>으로 잘못 작성.<br><strong>[포인트]</strong> 진행 기간 <code>this week</code> ?? <code>have had</code>.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>?? 3. 핵심 헷갈림 포인트 & 원어민 직관 가이드</h2>
+
+    <div class="highlight-box">
+        <h3>1?? <code>just</code> vs <code>just now</code> 기억 공식</h3>
+        <ul>
+            <li><strong><code>just</code> ?? 조동사 사이에 쏙! (현재완료)</strong>
+                <br><em>공식:</em> <code>have</code> + <code>just</code> + <code>p.p.</code>
+                <br><em>뉘앙스:</em> "지금 막! 문고리가 아직 덜컹거릴 정도로 현재와 연결된 찰나"
+                <br><em>예문:</em> <code>He has just gone out.</code> (나간 지 얼마 안 돼서 지금 자리에 없음)
+            </li>
+            <li style="margin-top: 10px;"><strong><code>just now</code> ?? 문장 맨 끝에 툭! (단순과거)</strong>
+                <br><em>공식:</em> 문장 + <code>just now</code>
+                <br><em>뉘앙스:</em> <code>a moment ago</code>와 같은 뜻으로, 지나간 <strong>과거의 1점(타임스탬프)</strong>을 찍음
+                <br><em>예문:</em> <code>He left just now.</code> (방금 전 그 시점에 나갔음)
+            </li>
+        </ul>
+    </div>
+
+    <div class="highlight-box">
+        <h3>2?? <code>watch</code> vs <code>see</code> (영화를 볼 때)</h3>
+        <ul>
+            <li><strong><code>see</code> (영화관 관람 / 인생에서의 경험)</strong>
+                <br><em>뉘앙스:</em> 시야에 들어와 전체적으로 경험했는가?
+                <br><em>적용:</em> "너 그 영화 본 적 있니?"라고 경험을 물을 때는 원어민 90% 이상이 <code>Have you seen this movie?</code>를 씁니다.
+            </li>
+            <li style="margin-top: 10px;"><strong><code>watch</code> (집중 시청 / 모니터링)</strong>
+                <br><em>뉘앙스:</em> TV 화면, 유튜브, 모니터 등을 눈을 떼지 않고 시선으로 쫓는 능동적 동작
+                <br><em>적용:</em> <code>I'm watching TV.</code> / <code>We watched Netflix last night.</code>
+            </li>
+        </ul>
+    </div>
+
+    <div class="highlight-box">
+        <h3>3?? <code>before</code> vs <code>ago</code></h3>
+        <ul>
+            <li><strong><code>ago</code> = 타임스탬프 (단순과거)</strong>
+                <br>기준점(현재)으로부터 "3일 전", "1시간 전"처럼 과거의 점을 찍습니다. (<code>I solved it 3 days ago.</code>)
+            </li>
+            <li style="margin-top: 10px;"><strong><code>before</code> = 내 인생의 경험치 클라우드 (현재완료)</strong>
+                <br>정확히 언제인지가 중요치 않고, 태어나서 지금까지 살아오며 내 뇌 속에 쌓인 경험 데이터입니다. (<code>I have solved this problem before.</code>)
+            </li>
+        </ul>
+    </div>
+
+    <h2>?? 4. 실수 방지 최종 체크리스트</h2>
+    <ol>
+        <li><strong>단순과거 전용 태그 (과거 시점 콕 찍기):</strong>
+            <br><code>yesterday</code>, <code>last year/month</code>, <code>in 2020</code>, <code>~ ago</code>, <code>when ~</code>, <code>just now</code>, <code>What time / When ~?</code>
+        </li>
+        <li><strong>현재완료 전용 태그 (현재까지의 연결/누적):</strong>
+            <br><code>since</code>, <code>for (현재까지 지속)</code>, <code>already</code>, <code>yet</code>, <code>ever</code>, <code>never</code>, <code>just</code>, <code>recently</code>, <code>before</code>, <code>It's the first time ~</code>
+        </li>
+        <li><strong>진행 중인 기간 vs 종료된 기간:</strong>
+            <br><code>this week / this morning</code> (아직 진행 중) ?? <strong>현재완료</strong>
+            <br><code>last week / yesterday morning</code> (이미 종료됨) ?? <strong>단순과거</strong>
+        </li>
+    </ol>
+</div>
+
+</body>
+</html>
