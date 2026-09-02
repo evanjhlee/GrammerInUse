@@ -65,4 +65,46 @@
                 const response = await fetch(`https://api.github.com/repos/${USERNAME}/${REPO_NAME}/contents`);
                 
                 if (!response.ok) {
-                    throw new Error(`GitHub API 호출 실패 (Stat
+                    throw new Error(`GitHub API 호출 실패 (Status: ${response.status})`);
+                }
+
+                const data = await response.json();
+                listElement.innerHTML = ''; // 로딩 메시지 제거
+
+                if (!Array.isArray(data)) {
+                    throw new Error('올바르지 않은 응답 데이터 형식입니다.');
+                }
+
+                // index.html을 제외한 순수 HTML 파일 필터링 및 이름순 정렬
+                const htmlFiles = data
+                    .filter(file => file.type === 'file' && file.name.endsWith('.html') && file.name.toLowerCase() !== 'index.html')
+                    .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' }));
+
+                if (htmlFiles.length === 0) {
+                    listElement.innerHTML = '<li>업로드된 노트가 없습니다.</li>';
+                    return;
+                }
+
+                // 목차 DOM 생성
+                htmlFiles.forEach(file => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+
+                    a.href = file.name;
+                    // 언더바(_) 및 대시(-)를 공백으로 치환하고 확장자 제거
+                    a.textContent = file.name.replace(/\.html$/i, '').replace(/[_]/g, ' ');
+
+                    li.appendChild(a);
+                    listElement.appendChild(li);
+                });
+
+            } catch (error) {
+                listElement.innerHTML = `<li class="error">목차를 불러오는 중 오류가 발생했습니다: ${error.message}</li>`;
+                console.error(error);
+            }
+        }
+
+        fetchHtmlFiles();
+    </script>
+</body>
+</html>
